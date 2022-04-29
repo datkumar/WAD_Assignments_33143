@@ -1,0 +1,9 @@
+<h1>{{  title }}</h1>
+<div>
+  <input [(ngModel)]="username" type="text" placeholder="Username" required>
+  <input [(ngModel)]="password" type="password" placeholder="Password" required>
+  <br><br>
+  <button type="submit" (click) = "add()">Register</button>
+  <br><br>
+</div>
+<app-profile [users] = "users"></app-profile>

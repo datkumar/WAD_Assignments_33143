@@ -1,0 +1,5 @@
+<!-- <h1 *ngFor="let user of users">{{ user }}</h1> -->
+<div *ngFor="let user of users">
+    <span>{{ user }}</span>
+    <span><button type="button" (click) = "delete(user)">Delete</button></span>
+</div>
