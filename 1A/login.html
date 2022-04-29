@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+	<link rel="stylesheet" href="./styles/login_style.css">
+
+	<title>Log-In</title>
+</head>
+
+<body>
+
+	<div class="form-container-parent">
+		<div class="form-container">
+
+			<div class="option-button-container">
+				<button id="login-btn" style="background-color: yellow;">Log-In</button>
+				<button id="signup-btn">Sign-Up</button>
+			</div>
+
+
+			<div id="login-container">
+				<h1>Log-In</h1>
+				<form id="login-form" action="api/login" method="post">
+					<label for="email">Email:</label><br>
+					<input type="email" name="email"><br>
+					<br>
+					<label for="password">Password:</label><br>
+					<input type="password" name="password"><br>
+					<br>
+					<input type="submit" value="Submit"></input>
+				</form>
+
+			</div>
+
+			<div id="signup-container" style="display: none;">
+				<h1>Sign-up</h1>
+				<form id="signup-form" action="api/signup" method="post">
+					<label for="fname">First Name:</label><br>
+					<input type="text" name="fname"><br>
+					<br>
+					<label for="lname">Last Name</label><br>
+					<input type="text" name="lname"><br>
+					<br>
+					<label for="email">Email:</label><br>
+					<input type="email" name="email"><br>
+					<br>
+					<label for="password">Password:</label><br>
+					<input type="password" name="password"><br>
+					<br>
+					<input type="submit" value="Submit"></input>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+<script src="./login_script.js"></script>
+
+</html>

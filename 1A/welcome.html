@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome</title>
+</head>
+
+<body>
+
+	<template>
+		<div id="msg1"></div>
+	</template>
+
+</body>
+
+<script>
+	const template = document.querySelector('template');
+	const content = template.content.cloneNode(true);
+	
+	content.querySelector('msg1').innerText = 'Welcome User';
+	document.body.append(content);
+
+</script>
+
+</html>
