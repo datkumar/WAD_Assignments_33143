@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<boby>
+
+    <div data-role="page" id="home">
+  
+      <div data-role="header">
+        <h1> Kumar </h1>
+      </div>
+  
+      <div class="ui-content">
+        
+       <h4>Full Stack Web Developer</h4>
+       
+         <h1> Hey!</h1>
+            <p> Welcome to my jQuery Mobile Web App </p>
+  
+        <h1 class="ui-bar ui-bar-a ui-corner-all"> ABOUT ME </h1>
+     
+        <div class="ui-body">
+          
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum perferendis nulla magni. Soluta sunt, aspernatur molestiae quidem sed ipsum inventore molestias doloribus eos. Suscipit molestiae ipsam doloremque atque at commodi?
+            </p>
+        </div>
+        
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <h3> MENU </h3>
+  
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div data-role="page" id="contact">
+  
+      <div data-role="header">
+        <h1> Kumar Deshmukh</h1>
+        <a href="#" data-rel="back" data-role="button"> Back </a>
+      </div>
+  
+      <div class="ui-content">
+        <h1> Say Hello.</h1>
+        <h3> Will you like to talk nerdy to me! </h3>
+        <p>Mail. <em>abc@gmail.com</em></p>
+      </div>
+
+      <div class="ui-field-contain">
+           <label for="text-15">NAME</label>
+           <input type="text" data-clear-btn="true" data-mini="true" name="text-15" id="text-15" value="">
+      </div>
+      
+      <div class="ui-field-contain">  
+        <label for="text-15">EMAIL</label>
+           <input type="text" data-clear-btn="true" data-mini="true" name="text-15" id="text-15" value="">  
+      </div>
+        
+       <div class="ui-field-contain">    
+         <label for="tel-2">PHONE</label>
+         <input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value="">
+      </div> 
+        
+       <div class="ui-field-contain">
+      <label for="textarea-14">MESSAGE</label>
+      <textarea data-mini="true" cols="40" rows="12" name="textarea-14" id="textarea-14"></textarea>
+         
+      </div>  
+
+      <div data-role="footer" data-position="fixed">
+        <h3> MENU</h3>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>          
+  
+    
+     <div data-role="page" id="portfolio">
+  
+      <div data-role="header">
+        <h1> Kumar Deshmukh</h1>
+         <a href="#" data-rel="back" data-role="button"> Back </a>
+      </div>
+       <div class="ui-btn ui-corner-all ui-btn-icon-top ui-icon-bullets">
+            <h3>Skills on the Resume</h3>
+    
+     <ul data-role="listview" data-inset="true" data-filter="true">
+       <li data-role="list-divider" data-inset="true"> Languages </li>
+       <li><a href="#html">C++</a></li>
+       <li><a href="#">Python</a></li>
+       <li><a href="#">Javascript</a></li>
+       
+       
+       <li data-role="list-divider" data-inset="true" data-filter="true"> Frameworks </li>
+         <li><a href="https://reactjs.org/">React</a></li>
+         <li><a href="#">Node.js</a></li>
+         <li><a href="#">Next.js</a></li>
+       
+       
+        <li data-role="list-divider" data-inset="true" data-filter="true"> Software </li>
+         <li><a href="https://www.mysql.com/products/workbench/">MySQLWorkbench</a></li>
+         <li><a href="https://codeforces.com/">codeforces</a></li>  
+     </ul>
+         
+       </div>   
+    </div>     
+  
+      <div data-role="footer" data-position="fixed">
+        <h3>MENU</h3>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    
+  
+      </div>
+         
+    
+     <div data-role="page" id="html">
+  
+          <div data-role="header">
+            <a href="#" data-rel="back" data-role="button"> Back </a>
+            <h1>Kumar Deshmukh</h1>
+          </div>
+  
+           <div data-role="ui-content">
+             <h1> HTML </h1>
+                <div class="ui-grid-a">
+                <div class="ui-block-a" > 
+                  
+                  <a href="#popup1" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="http://www.julissaroa.co/images/thumbs/11.jpg" alt="" style="width:30%"></a>
+  
+      <div data-role="popup" id="popup1" data-overlay-theme="b" data-theme="b" data-corners="false">
+      <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="http://www.julissaroa.co/images/thumbs/11.jpg" style="max-height:512px;" alt="">
+      </div>      
+        
+                  
+                <h2> Piece 1 </h2>
+            </div>
+                  
+       
+            <div class="ui-block-b"><img src="" alt=""/>
+              <h2> Piece 2 </h2>
+           </div>
+              
+              
+            <div class="ui-block-c"><img src="" alt=""/> 
+              <h2>  Piece 3</h2> 
+            </div>
+              
+      </div>
+  
+      <div data-role="footer" data-position="fixed">
+        <h3> MENU</h3>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+             
+       </div>
+  
+    </body>
+</html>
